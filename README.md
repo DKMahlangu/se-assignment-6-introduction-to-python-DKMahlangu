@@ -23,7 +23,7 @@
 
 ### 2. Installing Python:
 #### Steps to Install Python on Windows
-- Open your web browser and go to the official Python website`(https://www.python.org/)`, then navigate to the `Downloads` section and download the latest Python version for Windows.
+- Open your web browser and go to the official Python website (https://www.python.org/), then navigate to the `Downloads` section and download the latest Python version for Windows.
 - When the download is done, on your local machine go to `file explorer` then `downloads` to locate the downloaded installer file then `double-click to run it`.
 - A window will open, select `Customize installation` and proceed. Click on the `Add Path` check box, it will set the Python path automatically. (Ensure that the options for “Install for all users” and “Precompile standard library” are checked.)
 - Click the `Install` button to begin the installation process. You may be prompted by User Account Control (UAC) to allow changes to your computer. Click `Yes` to proceed.
@@ -55,25 +55,25 @@ Python has several basic data types that are used to store different kinds of da
 7. Dictionaries (dict): Unordered collections of key-value pairs (e.g., {'name': 'John', 'age': 30}).
 8.NoneType (None): A special value indicating the absence of a value.
  
-             # Create variables of different data types:
-             num = 10  # int
-             pi = 3.14  # float
-             my_string = "This is a string"  # str
-             numbers_list = [1, 2, 3, 4, 5]  # list
-             fruit_tuple = ("apple", "banana", "orange")  # tuple
-             student_dict = {"name": "Alex", "age": 21}  # dict
-             is_raining = False  # bool
-             nothing = None  # NoneType
-             
-             # Print the variables:
-             print("Number:", num)
-             print("Pi:", pi)
-             print("String:", my_string)
-             print("List:", numbers_list)
-             print("Tuple:", fruit_tuple)
-             print("Dictionary:", student_dict)
-             print("Boolean:", is_raining)
-             print("Nothing:", nothing)
+       # Create variables of different data types:
+       num = 10  # int
+       pi = 3.14  # float
+       my_string = "This is a string"  # str
+       numbers_list = [1, 2, 3, 4, 5]  # list
+       fruit_tuple = ("apple", "banana", "orange")  # tuple
+       student_dict = {"name": "Alex", "age": 21}  # dict
+       is_raining = False  # bool
+       nothing = None  # NoneType
+               
+       # Print the variables:
+       print("Number:", num)
+       print("Pi:", pi)
+       print("String:", my_string)
+       print("List:", numbers_list)
+       print("Tuple:", fruit_tuple)
+       print("Dictionary:", student_dict)
+       print("Boolean:", is_raining)
+       print("Nothing:", nothing)
 
 ### 5. Control Structures:
 #### Conditional Statements
@@ -137,20 +137,86 @@ Here’s how to define a simple function that takes two arguments and returns th
         print("The sum is:", result)  # Output: The sum is: 12
 
 #### Function Definition:
-**def add_numbers(a, b):**`def` is used to define a function, `add_numbers` is the name of the function. `(a, b)` are the parameters of the function.
-**""" ... """:** This is a docstring that describes what the function does.
-**return a + b:** This statement returns the sum of a and b.
+- **def add_numbers(a, b):**`def` is used to define a function, `add_numbers` is the name of the function. `(a, b)` are the parameters of the function.
+- **""" ... """:** This is a docstring that describes what the function does.
+- **return a + b:** This statement returns the sum of a and b.
 
 #### Function Call:
-
-result = add_numbers(5, 7):
-This line calls the add_numbers function with arguments 5 and 7.
-The function returns the sum, which is assigned to the variable result.
-print("The sum is:", result):
-This line prints the result to the console.
+- **result = add_numbers(5, 7):** This line calls the add_numbers function with arguments 5 and 7. The function returns the sum, which is assigned to the variable result.
+- **print("The sum is:", result):** This line prints the result to the console.
 
 ### 7. Lists and Dictionaries:
-   - Describe the differences between lists and dictionaries in Python. Write a script that creates a list of numbers and a dictionary with some key-value pairs, then demonstrates basic operations on both.
+#### Differences Between Lists and Dictionaries in Python
+####Lists
+- Ordered sequence of elements of any data type.
+- Elements indexed by their position in the list.
+- Defined using square brackets `[]`.
+- Access elements by index.
+- Supports operations like addition, deletion, insertion, concatenation.
+- Mutable, can be modified after creation.
+
+####Dictionaries
+- Unordered collection of key-value pairs.
+- Keys must be unique and immutable, can be of any data type.
+- Defined using `curly braces {}` with key-value pairs separated by a `colon :`.
+- Access elements by key.
+- Values can be of any data type.
+- Supports operations like adding, deleting, updating key-value pairs.
+- Mutable, can be modified after creation.
+
+#### Script Demonstrating Basic Operations on Lists and Dictionaries
+
+      # Create a list of numbers
+      my_list = [1, 2, 3, 4, 5]
+      
+      # Create a dictionary with key-value pairs
+      my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+      
+      # Print the list
+      print("List:", my_list)
+      
+      # Print the dictionary
+      print("Dictionary:", my_dict)
+      
+      # Add an element to the list
+      my_list.append(6)
+      
+      # Add a key-value pair to the dictionary
+      my_dict['state'] = 'California'
+      
+      # Print the updated list
+      print("Updated List:", my_list)
+      
+      # Print the updated dictionary
+      print("Updated Dictionary:", my_dict)
+      
+      # Access an element from the list using index
+      print("First element in list:", my_list[0])
+      
+      # Access a value from the dictionary using key
+      print("Name from dictionary:", my_dict['name'])
+      
+      # Remove an element from the list by index
+      del my_list[2]
+      
+      # Remove a key-value pair from the dictionary using key
+      del my_dict['city']
+      
+      # Print the final list
+      print("Final List:", my_list)
+      
+      # Print the final dictionary
+      print("Final Dictionary:", my_dict)
+
+  #### Output
+    List: [1, 2, 3, 4, 5]
+    Dictionary: {'name': 'John', 'age': 30, 'city': 'New York'}
+    Updated List: [1, 2, 3, 4, 5, 6]
+    Updated Dictionary: {'name': 'John', 'age': 30, 'city': 'New York', 'state': 'California'}
+    First element in list: 1
+    Name from dictionary: John
+    Final List: [1, 2, 4, 5, 6]
+    Final Dictionary: {'name': 'John', 'age': 30, 'state': 'California'}
 
 ### 8. Exception Handling:
    - What is exception handling in Python? Provide an example of how to use `try`, `except`, and `finally` blocks to handle errors in a Python script.
