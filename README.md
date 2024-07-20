@@ -147,7 +147,7 @@ Here’s how to define a simple function that takes two arguments and returns th
 
 ### 7. Lists and Dictionaries:
 #### Differences Between Lists and Dictionaries in Python
-####Lists
+#### Lists
 - Ordered sequence of elements of any data type.
 - Elements indexed by their position in the list.
 - Defined using square brackets `[]`.
@@ -155,7 +155,7 @@ Here’s how to define a simple function that takes two arguments and returns th
 - Supports operations like addition, deletion, insertion, concatenation.
 - Mutable, can be modified after creation.
 
-####Dictionaries
+#### Dictionaries
 - Unordered collection of key-value pairs.
 - Keys must be unique and immutable, can be of any data type.
 - Defined using `curly braces {}` with key-value pairs separated by a `colon :`.
